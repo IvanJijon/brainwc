@@ -1,0 +1,7 @@
+{
+  "name": "brainwc",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
