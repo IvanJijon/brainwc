@@ -1,16 +1,16 @@
 export interface Item {
-    title: String,
-    subtitle: String,
-    description: String
+    title: string,
+    subtitle: string,
+    description: string
 }
 
 export class ListItem implements Item {
 
-    title: String
-    subtitle: String
-    description: String
+    title: string
+    subtitle: string
+    description: string
 
-    constructor(title: String) {
+    constructor(title: string) {
         this.title = title
         this.subtitle = ""
         this.description = ""
