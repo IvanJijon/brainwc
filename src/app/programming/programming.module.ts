@@ -2,10 +2,10 @@ import { IonicModule } from '@ionic/angular';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { Tab1Page } from './tab1.page';
+import { ProgrammingPage } from './programming.page';
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 
-import { Tab1PageRoutingModule } from './tab1-routing.module';
+import { Tab1PageRoutingModule } from './programming-routing.module';
 import { ListModule } from '../list/list.module';
 
 @NgModule({
@@ -17,6 +17,6 @@ import { ListModule } from '../list/list.module';
     Tab1PageRoutingModule,
     ListModule
   ],
-  declarations: [Tab1Page]
+  declarations: [ProgrammingPage]
 })
-export class Tab1PageModule { }
+export class ProgrammingPageModule { }
