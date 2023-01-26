@@ -8,10 +8,12 @@ export class ProgressionService {
 
   constructor() { }
 
+  items: Item[] = []
+
   getProgression(subject: string): Item[] {
     switch (subject) {
       case 'programming':
-        return [{
+        this.items = [{
           title: "a programming title",
           subtitle: "a subtitle",
           description: "a very very very long description de mas de 100 caracteeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeres"
@@ -26,8 +28,9 @@ export class ProgressionService {
           subtitle: "a subtitle",
           description: "a description"
         }]
+        break
       case 'arts':
-        return [{
+        this.items = [{
           title: "an arts title",
           subtitle: "a subtitle",
           description: "a description"
@@ -42,8 +45,9 @@ export class ProgressionService {
           subtitle: "a subtitle",
           description: "a description"
         }]
+        break
       case 'freelancing':
-        return [{
+        this.items = [{
           title: "a freelancing title",
           subtitle: "a subtitle",
           description: "a description"
@@ -53,10 +57,12 @@ export class ProgressionService {
           subtitle: "a subtitle",
           description: "a description"
         }]
+        break
       default:
-        return []
         break;
     }
+
+    return this.items
 
   }
 }
