@@ -23,7 +23,9 @@ export class SortedComponent implements OnInit {
   ngOnInit() {
     this.tabService.getObservable().subscribe((tab) => {
       this.currentTab = tab
-      this.items = this.progressionService.getProgression(this.currentTab)
+      if (this.items.length == 0) { // prevent to reload data each time we change tab
+        this.items = this.progressionService.getProgression(this.currentTab)
+      }
     })
   }
 }
