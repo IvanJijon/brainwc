@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { ProgressionPage } from './progression.page';
 
-import { ProgrammingPageRoutingModule } from './progression-routing.module';
+import { ProgressionPageRoutingModule } from './progression-routing.module';
 import { ListModule } from '../list/list.module';
 
 @NgModule({
@@ -12,9 +12,9 @@ import { ListModule } from '../list/list.module';
     IonicModule,
     CommonModule,
     FormsModule,
-    ProgrammingPageRoutingModule,
+    ProgressionPageRoutingModule,
     ListModule
   ],
   declarations: [ProgressionPage]
 })
-export class ProgrammingPageModule { }
+export class ProgressionPageModule { }
