@@ -2,9 +2,9 @@ import { IonicModule } from '@ionic/angular';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { ProgrammingPage } from './programming.page';
+import { ProgressionPage } from './progression.page';
 
-import { Tab1PageRoutingModule } from './programming-routing.module';
+import { ProgrammingPageRoutingModule } from './progression-routing.module';
 import { ListModule } from '../list/list.module';
 
 @NgModule({
@@ -12,9 +12,9 @@ import { ListModule } from '../list/list.module';
     IonicModule,
     CommonModule,
     FormsModule,
-    Tab1PageRoutingModule,
+    ProgrammingPageRoutingModule,
     ListModule
   ],
-  declarations: [ProgrammingPage]
+  declarations: [ProgressionPage]
 })
 export class ProgrammingPageModule { }

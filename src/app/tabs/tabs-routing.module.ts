@@ -9,7 +9,15 @@ const routes: Routes = [
     children: [
       {
         path: 'programming',
-        loadChildren: () => import('../programming/programming.module').then(m => m.ProgrammingPageModule)
+        loadChildren: () => import('../progression/progression.module').then(m => m.ProgrammingPageModule)
+      },
+      {
+        path: 'arts',
+        loadChildren: () => import('../progression/progression.module').then(m => m.ProgrammingPageModule)
+      },
+      {
+        path: 'freelancing',
+        loadChildren: () => import('../progression/progression.module').then(m => m.ProgrammingPageModule)
       },
       {
         path: '',
