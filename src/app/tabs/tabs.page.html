@@ -1,4 +1,4 @@
-<ion-tabs>
+<ion-tabs (ionTabsDidChange)="tabChange($event)">
 
   <ion-tab-bar slot="bottom">
     <ion-tab-button tab="programming">
@@ -6,14 +6,14 @@
       <ion-label>Programming</ion-label>
     </ion-tab-button>
 
-    <ion-tab-button tab="tab2">
-      <ion-icon name="ellipse"></ion-icon>
-      <ion-label>Tab 2</ion-label>
+    <ion-tab-button tab="arts">
+      <ion-icon name="create-outline"></ion-icon>
+      <ion-label>Arts</ion-label>
     </ion-tab-button>
 
-    <ion-tab-button tab="tab3">
-      <ion-icon name="square"></ion-icon>
-      <ion-label>Tab 3</ion-label>
+    <ion-tab-button tab="freelancing">
+      <ion-icon name="cash-outline"></ion-icon>
+      <ion-label>Freelancing</ion-label>
     </ion-tab-button>
   </ion-tab-bar>
 
