@@ -6,15 +6,17 @@ import { ProgressionPage } from './progression.page';
 
 import { ProgressionPageRoutingModule } from './progression-routing.module';
 import { ListModule } from '../list/list.module';
+import { ProgressSheetModule } from '../progress-sheet/progress-sheet.module';
 
 @NgModule({
+  declarations: [ProgressionPage],
   imports: [
     IonicModule,
     CommonModule,
     FormsModule,
     ProgressionPageRoutingModule,
-    ListModule
-  ],
-  declarations: [ProgressionPage]
+    ListModule,
+    ProgressSheetModule
+  ]
 })
 export class ProgressionPageModule { }
