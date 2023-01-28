@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SortedComponent } from './sorted/sorted.component';
 import { IonicModule } from '@ionic/angular';
+import { ProgressSheetModule } from '../progress-sheet/progress-sheet.module';
 
 
 
@@ -9,7 +10,9 @@ import { IonicModule } from '@ionic/angular';
   declarations: [SortedComponent],
   imports: [
     IonicModule,
-    CommonModule
+    CommonModule,
+    ProgressSheetModule
+
   ],
   exports: [SortedComponent]
 })
