@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ItemReorderEventDetail } from '@ionic/angular';
-import { Item, ListItem } from 'src/app/shared/models/list-item.model';
+import { Item } from 'src/app/shared/models/list-item.model';
 import { ProgressionService } from 'src/app/shared/services/progression.service';
 import { TabService } from 'src/app/shared/services/tab.service';
 
