@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-progress-sheet',
@@ -7,8 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProgressSheetComponent implements OnInit {
 
+  @Input() modalTrigger: string = ""
+  @Input() itemTitle: string = "Item Title"
+
   constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() { }
 
 }

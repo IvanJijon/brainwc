@@ -1,12 +1,12 @@
-<ion-button id="open-modal" expand="block">Open Modal</ion-button>
-
-<ion-modal #modal trigger="open-modal">
+<!-- <ion-button id="open-modal-{{itemId}}" expand="block">Edit</ion-button> -->
+<!-- This modal is triggered by _any_ element with the id set to {{modalTrigger}} -->
+<ion-modal #modal trigger="{{modalTrigger}}">
   <ng-template>
     <ion-content>
       <ion-toolbar>
-        <ion-title>Modal</ion-title>
+        <ion-title>{{itemTitle}}</ion-title>
         <ion-buttons slot="end">
-          <ion-button color="light" (click)="modal.dismiss()">Close</ion-button>
+          <ion-button color="dark" (click)="modal.dismiss()">Close</ion-button>
         </ion-buttons>
       </ion-toolbar>
     </ion-content>
