@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Item } from '../shared/models/list-item.model';
 
 @Component({
   selector: 'app-progress-sheet',
@@ -8,7 +9,11 @@ import { Component, Input, OnInit } from '@angular/core';
 export class ProgressSheetComponent implements OnInit {
 
   @Input() modalTrigger: string = ""
-  @Input() itemTitle: string = "Item Title"
+  @Input() item: Item = {
+    title: "",
+    subtitle: "",
+    description: ""
+  }
 
   constructor() { }
 

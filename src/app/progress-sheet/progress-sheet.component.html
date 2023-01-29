@@ -4,11 +4,26 @@
   <ng-template>
     <ion-content>
       <ion-toolbar>
-        <ion-title>{{itemTitle}}</ion-title>
+        <ion-title>{{item.title.toUpperCase()}}</ion-title>
         <ion-buttons slot="end">
           <ion-button color="dark" (click)="modal.dismiss()">Close</ion-button>
         </ion-buttons>
       </ion-toolbar>
+      <ion-list>
+        <ion-item>
+          <ion-label position="stacked">Title</ion-label>
+          <ion-input value="{{item.title}}" placeholder="The item title"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked">Subtitle</ion-label>
+          <ion-input value="{{item.subtitle}}" placeholder="The item subtitle"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked">Description</ion-label>
+          <ion-textarea value="{{item.description}}" [autoGrow]="true" placeholder="The item description"></ion-textarea>
+        </ion-item>
+
+      </ion-list>
     </ion-content>
   </ng-template>
 </ion-modal>
