@@ -1,7 +1,7 @@
 <ion-reorder-group [disabled]="false" (ionItemReorder)="handleReorder($any($event))">
     <ion-list *ngFor="let item of items">
         <ion-item>
-            <ion-card button id="card-{{item.id}}">
+            <ion-card class="custom-card" button id="card-{{item.id}}">
                 <ion-card-header>
                     <app-progress-sheet [modalTrigger]="'card-'+item.id" [item]="item"></app-progress-sheet>
                     <ion-card-title>{{item.title}}</ion-card-title>
