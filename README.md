@@ -1,4 +1,6 @@
-# Readme
+# BrainWC
+
+A brain flushing helper, intended to be used as a tracking logbook for the many subjects one is working on.
 
 ## Requirements
 
