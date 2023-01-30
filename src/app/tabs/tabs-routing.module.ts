@@ -8,27 +8,14 @@ const routes: Routes = [
     component: TabsPage,
     children: [
       {
-        path: 'programming',
+        path: ':tab',
         loadChildren: () => import('../progression/progression.module').then(m => m.ProgressionPageModule)
-      },
-      {
-        path: 'arts',
-        loadChildren: () => import('../progression/progression.module').then(m => m.ProgressionPageModule)
-      },
-      {
-        path: 'freelancing',
-        loadChildren: () => import('../progression/progression.module').then(m => m.ProgressionPageModule)
-      },
-      {
-        path: '',
-        redirectTo: '/tabs/programming',
-        pathMatch: 'full'
       }
     ]
   },
   {
     path: '',
-    redirectTo: '/tabs/programming',
+    redirectTo: '/tabs',
     pathMatch: 'full'
   }
 ];
