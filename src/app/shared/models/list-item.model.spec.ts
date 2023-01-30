@@ -1,7 +1,12 @@
-import { ListItem } from './list-item.model';
+import { Item } from './list-item.model';
 
-describe('ListItem', () => {
+describe('Item', () => {
   it('should create an instance', () => {
-    expect(new ListItem("a title")).toBeTruthy();
+    const item: Item = {
+      title: "",
+      subtitle: "",
+      description: ""
+    }
+    expect(item).toBeTruthy();
   });
 });
