@@ -1,19 +1,9 @@
 <ion-tabs (ionTabsDidChange)="tabChange($event)">
 
   <ion-tab-bar slot="bottom">
-    <ion-tab-button tab="programming">
-      <ion-icon name="bug-outline"></ion-icon>
-      <ion-label>Programming</ion-label>
-    </ion-tab-button>
-
-    <ion-tab-button tab="arts">
-      <ion-icon name="create-outline"></ion-icon>
-      <ion-label>Arts</ion-label>
-    </ion-tab-button>
-
-    <ion-tab-button tab="freelancing">
-      <ion-icon name="cash-outline"></ion-icon>
-      <ion-label>Freelancing</ion-label>
+    <ion-tab-button *ngFor="let tab of tabs" tab="{{tab.name}}">
+      <ion-icon name="{{tab.icon}}"></ion-icon>
+      <ion-label>{{tab.label}}</ion-label>
     </ion-tab-button>
   </ion-tab-bar>
 
